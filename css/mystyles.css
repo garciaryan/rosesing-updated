@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -20293,18 +20294,41 @@ label.panel-block {
 * {
   box-sizing: border-box; }
 
+html, body {
+  height: 100%;
+  width: 100%; }
+
 .navbar {
-  background-color: #EAEAEA;
-  height: 20vh; }
+  background-color: #F7F7F7;
+  font-family: 'Montserrat', sans-serif; }
   .navbar .navbar-brand a.navbar-item {
     padding: 0; }
+    .navbar .navbar-brand a.navbar-item .logo {
+      width: 65%;
+      max-height: 100%; }
   .navbar .navbar-brand a.navbar-item:hover {
     border-bottom: none;
     margin: 0; }
+  .navbar .navbar-brand .name-brand {
+    font-size: 21px;
+    text-decoration: none;
+    padding: 0;
+    position: relative;
+    right: 10%;
+    font-family: 'Montserrat', sans-serif; }
+  .navbar .navbar-brand .title-color {
+    color: #4F6D7A; }
+  .navbar a.navbar-link:hover {
+    color: #4F6D7A; }
   .navbar a.navbar-item:hover {
-    background-color: #EAEAEA;
     color: #4F6D7A;
     border-bottom: 1px solid #000;
     margin-bottom: -1px; }
+  .navbar .navbar-item.tabs {
+    margin: 0; }
+  .navbar .navbar-item.tabs:hover {
+    border: none;
+    background-color: #fff;
+    margin: 0; }
 
 /*# sourceMappingURL=mystyles.css.map */

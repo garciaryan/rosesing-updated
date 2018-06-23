@@ -47,34 +47,75 @@ $colors: map-merge($colors, $addColors);
 
 // Start main styles
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 //theme
 $rs-badge: #A9BCD0;
 $rs-dark: #4F6D7A;
 $rs-gray: #EAEAEA;
+$rs-logo-color: #F7F7F7;
 $rs-lightblue: #C0D6DF;
 
 * {
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 .navbar {
-  background-color: $rs-gray;
-  height: 20vh;
+  background-color: $rs-logo-color;
+  font-family: 'Montserrat', sans-serif;
 
   .navbar-brand {
+    
+
     a.navbar-item {
       padding: 0;
+
+      .logo {
+        width: 65%;
+        max-height: 100%;
+      }
     }    
     a.navbar-item:hover {
       border-bottom: none;
       margin: 0;
     }
+
+    .name-brand {
+      font-size: 21px;
+      text-decoration: none;
+      padding: 0;
+      position: relative;
+      right: 10%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .title-color {
+      color: $rs-dark;
+    }
+  }
+
+  a.navbar-link:hover {
+    color: $rs-dark;
   }
 
   a.navbar-item:hover {
-    background-color: $rs-gray;
     color: $rs-dark;
     border-bottom: 1px solid #000;
     margin-bottom: -1px;
+  }
+
+  .navbar-item.tabs {
+    margin: 0;
+  }
+
+  .navbar-item.tabs:hover {
+    border: none;
+    background-color: #fff;
+    margin: 0;
   }
 }
