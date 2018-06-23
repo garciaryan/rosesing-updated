@@ -20296,7 +20296,8 @@ label.panel-block {
 
 html, body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  background-color: #C0D6DF; }
 
 .navbar {
   background-color: #F7F7F7;
