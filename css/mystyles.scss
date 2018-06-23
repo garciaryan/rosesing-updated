@@ -1,0 +1,80 @@
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/_all";
+@import "../node_modules/bulma/sass/base/_all";
+@import "../node_modules/bulma/sass/elements/_all";
+@import "../node_modules/bulma/sass/components/_all";
+@import "../node_modules/bulma/sass/grid/_all";
+@import "../node_modules/bulma/sass/layout/_all";
+
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb;
+// Add pink and its invert
+$pink: #ffb3b3;
+$pink-invert: #fff;
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+//$primary: $pink;
+$primary-invert: $pink-invert;
+// Use the existing orange as the danger color
+$danger: $orange;
+// Use the new serif family
+$family-primary: $family-serif;
+
+// 4. Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+
+// 5. Add new color variables to the color map.
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+// 6. Import the rest of Bulma
+@import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/bulma/bulma";
+
+
+// Start main styles
+
+//theme
+$rs-badge: #A9BCD0;
+$rs-dark: #4F6D7A;
+$rs-gray: #EAEAEA;
+$rs-lightblue: #C0D6DF;
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: $rs-gray;
+  height: 20vh;
+
+  .navbar-brand {
+    a.navbar-item {
+      padding: 0;
+    }    
+    a.navbar-item:hover {
+      border-bottom: none;
+      margin: 0;
+    }
+  }
+
+  a.navbar-item:hover {
+    background-color: $rs-gray;
+    color: $rs-dark;
+    border-bottom: 1px solid #000;
+    margin-bottom: -1px;
+  }
+}
