@@ -56,6 +56,9 @@ $rs-gray: #EAEAEA;
 $rs-logo-color: #F7F7F7;
 $rs-lightblue: #C0D6DF;
 
+$main-font: 'Montserrat', sans-serif;
+
+//Universals
 * {
   box-sizing: border-box;
 }
@@ -66,9 +69,10 @@ html, body {
   background-color: $rs-lightblue;
 }
 
+//Navbar
 .navbar {
   background-color: $rs-logo-color;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
 
   .navbar-brand {
     
@@ -92,7 +96,7 @@ html, body {
       padding: 0;
       position: relative;
       right: 10%;
-      font-family: 'Montserrat', sans-serif;
+      font-family: $main-font;
     }
 
     .title-color {
@@ -119,4 +123,14 @@ html, body {
     background-color: #fff;
     margin: 0;
   }
+}
+
+//Footer
+footer.footer {
+  font-family: $main-font;
+  background-color: $rs-logo-color;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
 }
