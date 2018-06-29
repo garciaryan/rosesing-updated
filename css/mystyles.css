@@ -20518,13 +20518,12 @@ main {
   width: 100%;
   font-family: "Montserrat", sans-serif; }
   main .about {
-    height: 400px;
+    height: 500px;
     width: 100%; }
     main .about .columns {
       height: 100%; }
     main .about .about-left {
       background-color: #4F6D7A;
-      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -20532,7 +20531,10 @@ main {
       font-size: 2.5em; }
     main .about .about-right {
       background-color: #C0D6DF;
-      height: 100%; }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 25px; }
   main .parallax {
     background-attachment: fixed;
     background-position: center;

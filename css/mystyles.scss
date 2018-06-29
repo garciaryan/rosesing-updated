@@ -131,7 +131,7 @@ main {
   font-family: $main-font;
 
   .about {
-    height: 400px;
+    height: 500px;
     width: 100%;
 
     .columns {
@@ -140,7 +140,6 @@ main {
 
     .about-left {
       background-color: $rs-dark;
-      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -150,7 +149,10 @@ main {
 
     .about-right {
       background-color: $rs-lightblue;
-      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 25px;
     }
   }
 
