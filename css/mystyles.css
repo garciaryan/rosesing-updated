@@ -20515,12 +20515,30 @@ html, body {
     margin: 0; }
 
 main {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
+  main .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://source.unsplash.com/random");
+    height: 500px;
+    width: 100%; }
+
+#myModal {
+  font-family: "Montserrat", sans-serif; }
+  #myModal .contact-info {
+    text-align: center;
+    padding-left: 100px; }
+  #myModal .modal-content {
+    text-align: center;
+    background-color: #F7F7F7; }
 
 footer.footer {
   font-family: "Montserrat", sans-serif;
   background-color: #F7F7F7;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%; }
 

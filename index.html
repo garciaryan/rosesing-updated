@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
   <link rel="stylesheet" href="css/mystyles.css">
   <title>Rose Sing and Associates</title>
@@ -17,7 +18,7 @@
         <a class="navbar-item" href="#home">
           <img class="logo" src="img/rsalogo1.jpg" alt="Rose Sing">
         </a>
-        <div class="name-brand navbar-item">
+        <div class="name-brand navbar-item animated fadeInDown">
           <a href="#">
             <div class="title-color">Rose Sing</div>
             <span class="title-color">and Associates, Inc.</span>
@@ -29,7 +30,7 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu animated slideInRight">
         <div class="navbar-end">
           <a href="#" class="navbar-item is-active">Overview</a>
           <a href="#" class="navbar-item">Services</a>
@@ -44,7 +45,7 @@
               <a href="#" class="navbar-item tabs">content</a>
             </div>
           </div>
-          <a href="#" class="navbar-item">Contact Us</a>
+          <a href="#" class="navbar-item showModal" data-toggle="modal" data-target="#myModal">Contact Us</a>
         </div>
       </div>
     </div>
@@ -53,7 +54,7 @@
   <!-- Main home page begins -->
   <main>
     <section class="hero is-medium has-carousel">
-      <div class="hero-carousel carousel-animated carousel-animate-fade">
+      <div class="hero-carousel carousel-animated carousel-animate-fade" data-autoplay="true" data-delay="10000">
         <div class='carousel-container'>
           <div class='carousel-item has-background is-active'>
             <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" />
@@ -66,14 +67,6 @@
           </div>
           <div class='carousel-item has-background'>
             <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" />
-          </div>
-        </div>
-        <div class="carousel-navigation is-overlay">
-          <div class="carousel-nav-left">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-          </div>
-          <div class="carousel-nav-right">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </div>
         </div>
       </div>
@@ -93,9 +86,17 @@
           </div>
         </div>
       </div>
-    </section>        
+    </section>
+    <!-- Services begin -->
+    <div class="container parallax">
+      
+    </div>
+    <!-- Services end -->
   </main>
   <!-- Main home page ends -->
+  <!-- Modal -->
+  
+  <!-- end modal -->
   <!-- Footer begins -->
   <footer class="footer">
     <div class="has-text-centered">
@@ -109,6 +110,7 @@
   </footer>
   <!-- Footer ends -->
   <script src="/node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

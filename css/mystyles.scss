@@ -127,13 +127,39 @@ html, body {
 //Main
 main {
   height: 100%;
+  width: 100%;
+
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://source.unsplash.com/random');
+    height: 500px;
+    width: 100%;
+  }
+}
+
+//Modal
+#myModal {
+  font-family: $main-font;
+
+  .contact-info {
+    text-align: center;
+    padding-left: 100px;
+  }
+
+  .modal-content {
+    text-align: center;
+    background-color: $rs-logo-color;
+  }
 }
 
 //Footer
 footer.footer {
   font-family: $main-font;
   background-color: $rs-logo-color;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
