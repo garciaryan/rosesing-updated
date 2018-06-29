@@ -126,8 +126,28 @@ html, body {
 
 //Main
 main {
+  position: relative;
   height: 100%;
   width: 100%;
+
+  .about {
+    height: 400px;
+    width: 100%;
+
+    .columns {
+      height: 100%;
+    }
+
+    .about-left {
+      background-color: $rs-dark;
+      height: 100%;
+    }
+    
+    .about-right {
+      background-color: $rs-lightblue;
+      height: 100%;
+    }
+  }
 
   .parallax {
     background-attachment: fixed;
@@ -156,10 +176,10 @@ main {
 }
 
 //Footer
-footer.footer {
+.footer {
   font-family: $main-font;
   background-color: $rs-logo-color;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
