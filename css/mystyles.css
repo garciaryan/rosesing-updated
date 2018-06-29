@@ -20517,6 +20517,8 @@ main {
   height: 100%;
   width: 100%;
   font-family: "Montserrat", sans-serif; }
+  main .hero {
+    height: 500px; }
   main .about {
     height: 500px;
     width: 100%; }
@@ -20528,13 +20530,14 @@ main {
       justify-content: center;
       align-items: center;
       color: #fff;
-      font-size: 2.5em; }
+      font-size: 3em; }
     main .about .about-right {
       background-color: #C0D6DF;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 25px; }
+      padding: 25px;
+      font-size: 15px; }
   main .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -20558,6 +20561,8 @@ main {
   background-color: #F7F7F7;
   position: relative;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 /*# sourceMappingURL=mystyles.css.map */
