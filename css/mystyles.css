@@ -20504,9 +20504,7 @@ html, body {
   .navbar a.navbar-link:hover {
     color: #4F6D7A; }
   .navbar a.navbar-item:hover {
-    color: #4F6D7A;
-    border-bottom: 1px solid #000;
-    margin-bottom: -1px; }
+    color: #4F6D7A; }
   .navbar .navbar-item.tabs {
     margin: 0; }
   .navbar .navbar-item.tabs:hover {
@@ -20517,7 +20515,8 @@ html, body {
 main {
   position: relative;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: "Montserrat", sans-serif; }
   main .about {
     height: 400px;
     width: 100%; }
@@ -20525,7 +20524,12 @@ main {
       height: 100%; }
     main .about .about-left {
       background-color: #4F6D7A;
-      height: 100%; }
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 2.5em; }
     main .about .about-right {
       background-color: #C0D6DF;
       height: 100%; }

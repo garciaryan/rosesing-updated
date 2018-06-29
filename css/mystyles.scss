@@ -54,6 +54,7 @@ $rs-dark: #4F6D7A;
 $rs-gray: #EAEAEA;
 $rs-logo-color: #F7F7F7;
 $rs-lightblue: #C0D6DF;
+$rs-white: #fff;
 
 $main-font: 'Montserrat', sans-serif;
 
@@ -109,8 +110,6 @@ html, body {
 
   a.navbar-item:hover {
     color: $rs-dark;
-    border-bottom: 1px solid #000;
-    margin-bottom: -1px;
   }
 
   .navbar-item.tabs {
@@ -129,6 +128,7 @@ main {
   position: relative;
   height: 100%;
   width: 100%;
+  font-family: $main-font;
 
   .about {
     height: 400px;
@@ -141,6 +141,11 @@ main {
     .about-left {
       background-color: $rs-dark;
       height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $rs-white;
+      font-size: 2.5em;
     }
 
     .about-right {
