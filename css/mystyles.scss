@@ -142,7 +142,7 @@ main {
       background-color: $rs-dark;
       height: 100%;
     }
-    
+
     .about-right {
       background-color: $rs-lightblue;
       height: 100%;
@@ -179,7 +179,7 @@ main {
 .footer {
   font-family: $main-font;
   background-color: $rs-logo-color;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
