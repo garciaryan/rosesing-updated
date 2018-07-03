@@ -13,7 +13,7 @@
 </head>
 <body class="has-navbar-fixed-top">
   <!-- Navbar begins -->
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" id="navi">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="#home">
@@ -33,8 +33,8 @@
       </div>
       <div class="navbar-menu animated slideInRight">
         <div class="navbar-end">
-          <a href="#" class="navbar-item is-active">Overview</a>
-          <a href="#" class="navbar-item">Services</a>
+          <a href="#overview" class="navbar-item is-active">Overview</a>
+          <a href="#services" class="navbar-item">Services</a>
           <div class="navbar-item has-dropdown is-hoverable">
             <a href="#" class="navbar-item">
               Projects
@@ -81,7 +81,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about page" id="overview">
       <div class="columns is-desktop">
         <div class="column is-one-third about-left">
           <h1 class="has-text-centered" data-aos="fade-right">About Us</h1>
@@ -100,7 +100,7 @@
       </div>
     </section>
     <!-- Services begin -->
-    <div class="parallax overlay">
+    <div class="parallax overlay page" id="services">
       <div class="apply-overlay">
         <div class="columns is-marginless is-desktop full-height">
           <div class="column services-content">
