@@ -20538,12 +20538,16 @@ main {
       justify-content: space-between;
       padding: 25px;
       font-size: 15px; }
+  main .overlay div {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
   main .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/random");
+    background-image: url("https://source.unsplash.com/random");
     height: 450px;
     width: 100%; }
     main .parallax .services-title {
