@@ -20518,7 +20518,7 @@ main {
   width: 100%;
   font-family: "Montserrat", sans-serif; }
   main .hero {
-    height: 500px; }
+    height: 100vh; }
   main .about {
     height: 500px;
     width: 100%; }
