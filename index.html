@@ -46,7 +46,7 @@
               <a href="#" class="navbar-item tabs">content</a>
             </div>
           </div>
-          <a href="#" class="navbar-item showModal" data-toggle="modal" data-target="#myModal">Contact Us</a>
+          <div class="navbar-item" id="showModal">Contact Us</div>
         </div>
       </div>
     </div>
@@ -164,7 +164,13 @@
   </main>
   <!-- Main home page ends -->
   <!-- Modal -->
-  
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <!-- Any other Bulma elements you want -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
   <!-- end modal -->
   <script src="/node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
   <script src="/node_modules/aos/dist/aos.js"></script>

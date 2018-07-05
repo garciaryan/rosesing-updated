@@ -1,9 +1,19 @@
+
+/**
+ * Init Bulma carousel extension
+ */
 var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
 
-//init AOS
+/**
+ *  Init AOS
+ */
 AOS.init();
 
-//// Scrollspy and smooth scrolling
+/***
+ * 
+ * Scrollspy and smooth scrolling
+ *  
+ */
 // this makes the height of each page equal to the height of the window
 $('.page').css('height', $( window ).height());
 
@@ -60,3 +70,16 @@ hash = function(h){
     location.hash = h;
   }
 };
+
+
+/**
+ * Modal functionality
+ */
+
+$('#showModal').click(() => {
+  $('.modal').addClass('is-active');
+});
+
+$('.modal-close').click(() => {
+  $('.modal').removeClass('is-active');
+});

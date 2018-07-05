@@ -87,10 +87,14 @@ html, body {
   background-color: $rs-logo-color;
   font-family: $main-font;
 
+  #showModal:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+  }
+
   .navbar-brand {
     
-
-    a.navbar-item {
+    .navbar-item {
       padding: 0;
 
       .logo {
@@ -98,7 +102,7 @@ html, body {
         max-height: 100%;
       }
     }    
-    a.navbar-item:hover {
+    .navbar-item:hover {
       border-bottom: none;
       margin: 0;
     }
@@ -117,11 +121,11 @@ html, body {
     }
   }
 
-  a.navbar-link:hover {
+  .navbar-link:hover {
     color: $rs-dark;
   }
 
-  a.navbar-item:hover {
+  .navbar-item:hover {
     color: $rs-dark;
   }
 

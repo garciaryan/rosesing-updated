@@ -20494,12 +20494,15 @@ html, body {
 .navbar {
   background-color: #F7F7F7;
   font-family: "Montserrat", sans-serif; }
-  .navbar .navbar-brand a.navbar-item {
+  .navbar #showModal:hover {
+    background-color: #fafafa;
+    cursor: pointer; }
+  .navbar .navbar-brand .navbar-item {
     padding: 0; }
-    .navbar .navbar-brand a.navbar-item .logo {
+    .navbar .navbar-brand .navbar-item .logo {
       width: 65%;
       max-height: 100%; }
-  .navbar .navbar-brand a.navbar-item:hover {
+  .navbar .navbar-brand .navbar-item:hover {
     border-bottom: none;
     margin: 0; }
   .navbar .navbar-brand .name-brand {
@@ -20511,9 +20514,9 @@ html, body {
     font-family: "Montserrat", sans-serif; }
   .navbar .navbar-brand .title-color {
     color: #4F6D7A; }
-  .navbar a.navbar-link:hover {
+  .navbar .navbar-link:hover {
     color: #4F6D7A; }
-  .navbar a.navbar-item:hover {
+  .navbar .navbar-item:hover {
     color: #4F6D7A; }
   .navbar .navbar-item.tabs {
     margin: 0; }
