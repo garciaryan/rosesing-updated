@@ -20530,8 +20530,9 @@ main {
   main .hero {
     height: 100vh; }
   main .about {
-    height: 500px;
-    width: 100%; }
+    height: 90vh;
+    width: 100%;
+    position: relative; }
     main .about .columns {
       height: 100%; }
     main .about .about-left {
@@ -20545,20 +20546,20 @@ main {
       background-color: #C0D6DF;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-evenly;
       padding: 25px;
-      font-size: 15px; }
+      font-size: 1em; }
   main .overlay .apply-overlay {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.7); }
   main .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("https://source.unsplash.com/random");
-    height: 450px;
+    height: 90vh;
     width: 100%; }
     main .parallax .services-title {
       font-size: 3em;
@@ -20572,7 +20573,7 @@ main {
       justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
-      font-size: 14px; }
+      font-size: 0.95em; }
 
 #myModal {
   font-family: "Montserrat", sans-serif; }

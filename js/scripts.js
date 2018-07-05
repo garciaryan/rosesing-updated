@@ -21,7 +21,7 @@ $('.page').css('height', $( window ).height());
     e.preventDefault();
     //set the top offset animation and speed
     $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
+      scrollTop: $($(this).attr('href')).offset().top - 78
 },1000);
     hash($(this).attr('href'));
   });
