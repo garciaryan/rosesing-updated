@@ -20497,6 +20497,8 @@ html, body {
   .navbar #showModal:hover {
     background-color: #fafafa;
     cursor: pointer; }
+  .navbar .navbar-brand .navbar-burger {
+    margin-left: 0; }
   .navbar .navbar-brand .navbar-item {
     padding: 0; }
     .navbar .navbar-brand .navbar-item .logo {

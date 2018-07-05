@@ -87,3 +87,16 @@ $('.modal-close').click(() => {
 $('.modal-background').click(() => {
   $('.modal').removeClass('is-active');
 });
+
+/**
+ * Mobile hanburger toggle
+ */
+$('#nav-toggle').click(() => {
+  let navMenu = $('#nav-menu');
+  if (navMenu.hasClass('is-active')){
+    navMenu.removeClass('is-active');
+  } else {
+    navMenu.addClass('is-active');
+  }
+});
+
