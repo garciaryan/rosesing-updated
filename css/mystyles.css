@@ -20531,7 +20531,8 @@ main {
   width: 100%;
   font-family: "Montserrat", sans-serif; }
   main .hero {
-    height: 100vh; }
+    height: 100vh;
+    position: relative; }
   main .about {
     height: 90vh;
     width: 100%;
@@ -20569,7 +20570,8 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #fff; }
+      color: #fff;
+      background-color: #4F6D7A; }
     main .parallax .services-content {
       color: #fff;
       display: flex;

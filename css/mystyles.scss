@@ -149,6 +149,7 @@ main {
 
   .hero {
     height: 100vh;
+    position: relative;
   }
 
   .about {
@@ -200,6 +201,7 @@ main {
       justify-content: center;
       align-items: center;
       color: $rs-white;
+      background-color: $rs-dark;
     }
 
     .services-content {

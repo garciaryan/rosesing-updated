@@ -83,3 +83,7 @@ $('#showModal').click(() => {
 $('.modal-close').click(() => {
   $('.modal').removeClass('is-active');
 });
+
+$('.modal-background').click(() => {
+  $('.modal').removeClass('is-active');
+});
