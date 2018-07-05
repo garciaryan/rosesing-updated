@@ -89,7 +89,7 @@ $('.modal-background').click(() => {
 });
 
 /**
- * Mobile hanburger toggle
+ * Mobile hamburger toggle
  */
 $('#nav-toggle').click(() => {
   let navMenu = $('#nav-menu');
