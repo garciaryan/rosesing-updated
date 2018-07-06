@@ -157,7 +157,6 @@ main {
   }
 
   .about {
-    height: 90vh;
     width: 100%;
     position: relative;
 
@@ -197,7 +196,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('https://source.unsplash.com/random');
-    height: 90vh;
     width: 100%;
 
     .services-title {
@@ -244,4 +242,20 @@ main {
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+// Media Queries 
+@media screen and (max-width: 767px){
+  .column-switch {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .services-content {
+    display: block !important;
+  }
+
+  .services-title {
+    display: block !important;
+  }
 }
