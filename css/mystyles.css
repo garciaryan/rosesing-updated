@@ -20582,6 +20582,8 @@ main {
   text-align: center; }
   .modal .modal-content .subtitle {
     font-weight: bold; }
+  .modal .modal-content .contact-info {
+    margin-top: 10px; }
 
 .footer {
   font-family: "Montserrat", sans-serif;
