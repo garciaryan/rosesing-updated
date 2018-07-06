@@ -20497,8 +20497,6 @@ html, body {
   .navbar #showModal:hover {
     background-color: #fafafa;
     cursor: pointer; }
-  .navbar .navbar-brand .navbar-burger {
-    margin-left: 0; }
   .navbar .navbar-brand .navbar-item {
     padding: 0; }
     .navbar .navbar-brand .navbar-item .logo {
@@ -20511,8 +20509,6 @@ html, body {
     font-size: 21px;
     text-decoration: none;
     padding: 0;
-    position: relative;
-    right: 10%;
     font-family: "Montserrat", sans-serif; }
   .navbar .navbar-brand .title-color {
     color: #4F6D7A; }
@@ -20603,6 +20599,9 @@ main {
   .column-switch {
     display: flex;
     flex-direction: column-reverse; }
+
+  .navbar .navbar-brand .name-brand {
+    font-size: 18px; }
 
   .services-content {
     display: block !important; }
