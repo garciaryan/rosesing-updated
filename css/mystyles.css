@@ -20500,7 +20500,7 @@ html, body {
   .navbar .navbar-brand .navbar-item {
     padding: 0; }
     .navbar .navbar-brand .navbar-item .logo {
-      width: 65%;
+      width: 105px;
       max-height: 100%; }
   .navbar .navbar-brand .navbar-item:hover {
     border-bottom: none;
@@ -20509,6 +20509,7 @@ html, body {
     font-size: 21px;
     text-decoration: none;
     padding: 0;
+    margin-left: 10px;
     font-family: "Montserrat", sans-serif; }
   .navbar .navbar-brand .title-color {
     color: #4F6D7A; }
