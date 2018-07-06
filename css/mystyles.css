@@ -20503,8 +20503,7 @@ html, body {
       width: 105px;
       max-height: 100%; }
   .navbar .navbar-brand .navbar-item:hover {
-    border-bottom: none;
-    margin: 0; }
+    border-bottom: none; }
   .navbar .navbar-brand .name-brand {
     font-size: 21px;
     text-decoration: none;
@@ -20530,7 +20529,7 @@ main {
   width: 100%;
   font-family: "Montserrat", sans-serif; }
   main .hero {
-    height: 100vh;
+    height: 100%;
     position: relative; }
   main .about {
     width: 100%;
@@ -20609,5 +20608,10 @@ main {
 
   .services-title {
     display: block !important; } }
+@media screen and (min-width: 1024px) {
+  main .about {
+    height: 100%; }
+  main .parallax {
+    height: 100%; } }
 
 /*# sourceMappingURL=mystyles.css.map */
