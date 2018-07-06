@@ -20479,7 +20479,8 @@ label.panel-block {
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #C0D6DF; }
+  background-color: #C0D6DF;
+  font-family: "Montserrat", sans-serif; }
 
 .full-width {
   width: 100%; }
@@ -20577,14 +20578,10 @@ main {
       flex-direction: column;
       font-size: 0.95em; }
 
-#myModal {
-  font-family: "Montserrat", sans-serif; }
-  #myModal .contact-info {
-    text-align: center;
-    padding-left: 100px; }
-  #myModal .modal-content {
-    text-align: center;
-    background-color: #F7F7F7; }
+.modal .modal-content {
+  text-align: center; }
+  .modal .modal-content .subtitle {
+    font-weight: bold; }
 
 .footer {
   font-family: "Montserrat", sans-serif;

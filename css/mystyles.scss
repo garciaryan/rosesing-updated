@@ -67,6 +67,7 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: $rs-lightblue;
+  font-family: $main-font;
 }
 
 .full-width {
@@ -213,17 +214,14 @@ main {
 }
 
 //Modal
-#myModal {
-  font-family: $main-font;
-
-  .contact-info {
-    text-align: center;
-    padding-left: 100px;
-  }
+.modal {
 
   .modal-content {
     text-align: center;
-    background-color: $rs-logo-color;
+
+    .subtitle {
+      font-weight: bold;
+    }
   }
 }
 
