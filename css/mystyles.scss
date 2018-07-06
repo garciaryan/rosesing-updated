@@ -215,6 +215,7 @@ main {
 
 //Modal
 .modal {
+  font-family: $main-font;
 
   .modal-content {
     text-align: center;
@@ -225,6 +226,12 @@ main {
 
     .contact-info {
       margin-top: 10px;
+    }
+
+    button {
+      background-color: $rs-dark;
+      color: $rs-white;
+      font-family: $main-font;
     }
   }
 }

@@ -20578,12 +20578,18 @@ main {
       flex-direction: column;
       font-size: 0.95em; }
 
-.modal .modal-content {
-  text-align: center; }
-  .modal .modal-content .subtitle {
-    font-weight: bold; }
-  .modal .modal-content .contact-info {
-    margin-top: 10px; }
+.modal {
+  font-family: "Montserrat", sans-serif; }
+  .modal .modal-content {
+    text-align: center; }
+    .modal .modal-content .subtitle {
+      font-weight: bold; }
+    .modal .modal-content .contact-info {
+      margin-top: 10px; }
+    .modal .modal-content button {
+      background-color: #4F6D7A;
+      color: #fff;
+      font-family: "Montserrat", sans-serif; }
 
 .footer {
   font-family: "Montserrat", sans-serif;
