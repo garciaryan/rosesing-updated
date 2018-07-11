@@ -149,6 +149,10 @@ main {
   .hero {
     height: 100%;
     position: relative;
+
+    img.is-background {
+      filter: brightness(50%);
+    }
   }
 
   .about {

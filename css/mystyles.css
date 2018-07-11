@@ -20532,6 +20532,8 @@ main {
   main .hero {
     height: 100%;
     position: relative; }
+    main .hero img.is-background {
+      filter: brightness(50%); }
   main .about {
     width: 100%;
     position: relative; }
