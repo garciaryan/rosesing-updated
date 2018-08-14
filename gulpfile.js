@@ -2,6 +2,7 @@ let gulp = require('gulp'),
   del = require('del'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
+  inject = require('gulp-inject'),
   runSequence = require('run-sequence'),
   minify = require('gulp-minify'); 
 
@@ -10,8 +11,10 @@ gulp.task('delete', () => {
 });  
 
 gulp.task('index', () => {
-  gulp.src('index.html')
-    .pipe(minify())
+  let target = gulp.src('index.html');
+  let sources = gulp.src(['dist/css/*.css', 'dist/js/*.js']);
+
+  return target.pipe(inject(sources))
     .pipe(gulp.dest('dist'));
 });
 
@@ -56,7 +59,7 @@ gulp.task('js-deps', () => {
 });
 
 gulp.task('build', done => {
-  runSequence('delete', 'index', 'css', 'js', 'css-deps', 'js-deps', 'img', done);
+  runSequence('delete', 'css', 'js', 'css-deps', 'js-deps', 'img', 'index', done);
   console.log('Built!');
 });
 
