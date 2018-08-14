@@ -20563,7 +20563,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("https://source.unsplash.com/random");
+    background-image: url("../img/unsplash-tower.jpg");
     width: 100%; }
     main .parallax .services-title {
       font-size: 3em;

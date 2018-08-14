@@ -1,0 +1,32 @@
+{
+  "name": "rosesing-updated",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garciaryan/rosesing-updated.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garciaryan/rosesing-updated/issues"
+  },
+  "homepage": "https://github.com/garciaryan/rosesing-updated#readme",
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "aos": "^3.0.0-beta.4",
+    "bulma": "^0.7.1",
+    "bulma-carousel": "^3.0.0",
+    "bulma-start": "0.0.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-minify": "^3.1.0",
+    "run-sequence": "^2.2.1"
+  }
+}
