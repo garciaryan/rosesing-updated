@@ -2,6 +2,7 @@ const gulp = require('gulp'),
   del = require('del'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
+  gulpif = require('gulp-if'),
   ghPages = require('gulp-gh-pages'),
   runSequence = require('run-sequence'),
   minify = require('gulp-minify'); 
@@ -22,7 +23,7 @@ gulp.task('css-deps', () => {
     "node_modules/animate.css/animate.min.css",
     "node_modules/bulma/css/bulma.css"
   ])
-    .pipe(minify())
+    .pipe(gulpif(file => !(file.path.includes('.min.css')), minify()))
     .pipe(concat('deps.css'))
     .pipe(gulp.dest('dist/css'));
 });
@@ -51,13 +52,13 @@ gulp.task('js-deps', () => {
     "node_modules/aos/dist/aos.js"
   ])
     .pipe(uglify())
-    .pipe(minify())
+    .pipe(gulpif(file => !(file.path.includes('.min.js')), minify()))
     .pipe(concat('deps.js'))
     .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('build', done => {
-  runSequence('delete', 'css', 'js', 'css-deps', 'js-deps', 'img', 'index', done);
+  runSequence('delete', 'css-deps', 'js-deps', 'css', 'js', 'img', 'index', done);
   console.log('Built!');
 });
 
