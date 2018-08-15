@@ -64,4 +64,5 @@ gulp.task('build', done => {
 gulp.task('deploy', () => {
   gulp.src('./dist/**/*')
     .pipe(ghPages());
+  console.log('Deployed dist folder to gh-pages.');
 });
