@@ -1,8 +1,8 @@
-let gulp = require('gulp'),
+const gulp = require('gulp'),
   del = require('del'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  inject = require('gulp-inject'),
+  ghPages = require('gulp-gh-pages'),
   runSequence = require('run-sequence'),
   minify = require('gulp-minify'); 
 
@@ -11,10 +11,8 @@ gulp.task('delete', () => {
 });  
 
 gulp.task('index', () => {
-  let target = gulp.src('index.html');
-  let sources = gulp.src(['dist/css/*.css', 'dist/js/*.js']);
-
-  return target.pipe(inject(sources))
+  gulp.src('index.html')
+    .pipe(minify())
     .pipe(gulp.dest('dist'));
 });
 
@@ -63,3 +61,7 @@ gulp.task('build', done => {
   console.log('Built!');
 });
 
+gulp.task('deploy', () => {
+  gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
