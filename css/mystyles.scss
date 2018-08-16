@@ -217,6 +217,44 @@ main {
   }
 }
 
+//Projects
+#projects {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+  }
+  .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+    
+    &:hover{
+      flex: 7;
+    }
+  }
+  .education {
+    background-color: $rs-dark; 
+  }
+  .commercial {
+    background-color: $rs-gray;
+  }
+  .healthcare {
+    background-color: $rs-badge;
+  }
+  .public-service {
+    background-color: $rs-lightblue;
+  }
+}
+
 //Modal
 .modal {
   font-family: $main-font;
