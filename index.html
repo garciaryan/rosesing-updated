@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
-  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css"> -->
+  <link rel="stylesheet" href="css/deps.css">
   <link rel="stylesheet" href="css/mystyles.css">
-  <!-- inject:css -->
-  <!-- endinject -->
   <title>Rose Sing and Associates</title>
 </head>
 <body class="has-navbar-fixed-top">
@@ -37,19 +36,9 @@
         <div class="navbar-end">
           <a href="#overview" class="navbar-item">About Us</a>
           <a href="#services" class="navbar-item">Services</a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a href="#" class="navbar-item">
-              Projects
-            </a>
-            <div class="navbar-dropdown">
-              <a href="#" class="navbar-item tabs">Education</a>
-              <a href="#" class="navbar-item tabs">Commercial</a>
-              <a href="#" class="navbar-item tabs">Healthcare</a>
-              <a href="#" class="navbar-item tabs">Public Service</a>
-            </div>
-          </div>
-          <div class="navbar-item" id="showModal">Contact</div>
+          <a href="#projects" class="navbar-item">Projects</a>
         </div>
+        <div class="navbar-item" id="showModal">Contact</div>
       </div>
     </div>
   </nav>
@@ -148,7 +137,26 @@
     </div>
     <!-- Services end -->
     <!-- Projects Begin -->
-    
+    <section class="section" id="projects">
+      <div class="gallery-wrap">
+        <div class="item rs-dark">
+          <h1 class="item-header">Education</h1>
+          <div class="education">hey</div>
+        </div>
+        <div class="item rs-gray">
+          <h1 class="item-header">Commercial</h1>
+          <div class="commercial">hey</div>
+        </div>
+        <div class="item rs-blue">
+          <h1 class="item-header">Healthcare</h1>
+          <div class="healthcare">hey</div>
+        </div>
+        <div class="item rs-lightblue">
+          <h1 class="item-header">Public Service</h1>
+          <div class="public-service">hey</div>
+        </div>
+      </div>
+    </section>
     <!-- Projects end -->
     <!-- Footer begins -->
     <footer class="footer">
@@ -256,11 +264,10 @@
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
   <!-- end modal -->
-  <script src="/node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
-  <script src="/node_modules/aos/dist/aos.js"></script>
+  <script src="js/deps.js"></script>
+  <!-- <script src="node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+  <script src="node_modules/aos/dist/aos.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
-  <!-- inject:js -->
-  <!-- endinject -->
 </body>
 </html>

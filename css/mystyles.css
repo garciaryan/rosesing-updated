@@ -20580,6 +20580,54 @@ main {
       flex-direction: column;
       font-size: 0.95em; }
 
+#projects {
+  height: 100%;
+  width: 100%;
+  padding: 0; }
+  #projects .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh; }
+  #projects .item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease; }
+    #projects .item:hover {
+      flex: 7; }
+      #projects .item:hover .item-header {
+        display: none; }
+      #projects .item:hover .education,
+      #projects .item:hover .commercial,
+      #projects .item:hover .healthcare,
+      #projects .item:hover .public-service {
+        display: block; }
+    #projects .item .item-header {
+      padding: 10px; }
+  #projects .rs-dark {
+    background-color: #4F6D7A; }
+  #projects .rs-gray {
+    background-color: #EAEAEA; }
+  #projects .rs-blue {
+    background-color: #A9BCD0; }
+  #projects .rs-lightblue {
+    background-color: #C0D6DF; }
+  #projects .education {
+    display: none; }
+  #projects .commercial {
+    display: none; }
+  #projects .healthcare {
+    display: none; }
+  #projects .public-service {
+    display: none; }
+
 .modal {
   font-family: "Montserrat", sans-serif; }
   .modal .modal-content {
