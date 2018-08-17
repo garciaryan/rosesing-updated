@@ -20602,16 +20602,31 @@ main {
     transition: flex 0.8s ease; }
     #projects .item:hover {
       flex: 7; }
+      #projects .item:hover .item-header {
+        display: none; }
+      #projects .item:hover .education,
+      #projects .item:hover .commercial,
+      #projects .item:hover .healthcare,
+      #projects .item:hover .public-service {
+        display: block; }
     #projects .item .item-header {
       padding: 10px; }
-  #projects .education {
+  #projects .rs-dark {
     background-color: #4F6D7A; }
-  #projects .commercial {
+  #projects .rs-gray {
     background-color: #EAEAEA; }
-  #projects .healthcare {
+  #projects .rs-blue {
     background-color: #A9BCD0; }
-  #projects .public-service {
+  #projects .rs-lightblue {
     background-color: #C0D6DF; }
+  #projects .education {
+    display: none; }
+  #projects .commercial {
+    display: none; }
+  #projects .healthcare {
+    display: none; }
+  #projects .public-service {
+    display: none; }
 
 .modal {
   font-family: "Montserrat", sans-serif; }

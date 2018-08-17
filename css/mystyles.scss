@@ -243,22 +243,44 @@ main {
     
     &:hover{
       flex: 7;
+      .item-header {
+        display: none;
+      }
+      .education,
+      .commercial,
+      .healthcare,
+      .public-service {
+        display: block;
+      }
     }
     .item-header {
       padding: 10px;
     }
   }
-  .education {
+  .rs-dark {
     background-color: $rs-dark;
   }
-  .commercial {
+
+  .rs-gray {
     background-color: $rs-gray;
   }
-  .healthcare {
+  .rs-blue {
     background-color: $rs-badge;
   }
-  .public-service {
+  .rs-lightblue {
     background-color: $rs-lightblue;
+  }
+  .education {
+    display: none;
+  }
+  .commercial {
+    display: none;
+  }
+  .healthcare {
+    display: none;
+  }
+  .public-service {
+    display: none;
   }
 }
 
