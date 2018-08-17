@@ -7,15 +7,12 @@ let gulp = require('gulp'),
   minify = require('gulp-minify'); 
 
 gulp.task('delete', () => {
-  del(['dist']);
+  del(['docs']);
 });  
 
 gulp.task('index', () => {
-  let target = gulp.src('index.html');
-  let sources = gulp.src(['dist/css/*.css', 'dist/js/*.js']);
-
-  return target.pipe(inject(sources))
-    .pipe(gulp.dest('dist'));
+  gulp.src('index.html')
+    .pipe(gulp.dest('docs'));
 });
 
 gulp.task('css-deps', () => {
@@ -26,7 +23,7 @@ gulp.task('css-deps', () => {
   ])
     .pipe(minify())
     .pipe(concat('deps.css'))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('docs/css'));
 });
 
 gulp.task('css', () => {
@@ -34,17 +31,17 @@ gulp.task('css', () => {
     'css/mystyles.css'
   ])
     .pipe(minify())
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('docs/css'));
 });
 
 gulp.task('js', () => {
   gulp.src('js/*.js')
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('docs/js'));
 });
 
 gulp.task('img', () => {
   gulp.src('img/*.jpg')
-    .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('docs/img'));
 });
 
 gulp.task('js-deps', () => {
@@ -55,7 +52,7 @@ gulp.task('js-deps', () => {
     .pipe(uglify())
     .pipe(minify())
     .pipe(concat('deps.js'))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('docs/js'));
 });
 
 gulp.task('build', done => {
