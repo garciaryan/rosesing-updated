@@ -217,6 +217,73 @@ main {
   }
 }
 
+//Projects
+#projects {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+  }
+  .item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+    
+    &:hover{
+      flex: 7;
+      .item-header {
+        display: none;
+      }
+      .education,
+      .commercial,
+      .healthcare,
+      .public-service {
+        display: block;
+      }
+    }
+    .item-header {
+      padding: 10px;
+    }
+  }
+  .rs-dark {
+    background-color: $rs-dark;
+  }
+
+  .rs-gray {
+    background-color: $rs-gray;
+  }
+  .rs-blue {
+    background-color: $rs-badge;
+  }
+  .rs-lightblue {
+    background-color: $rs-lightblue;
+  }
+  .education {
+    display: none;
+  }
+  .commercial {
+    display: none;
+  }
+  .healthcare {
+    display: none;
+  }
+  .public-service {
+    display: none;
+  }
+}
+
 //Modal
 .modal {
   font-family: $main-font;
