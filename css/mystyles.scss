@@ -231,6 +231,10 @@ main {
   }
   .item {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -240,9 +244,12 @@ main {
     &:hover{
       flex: 7;
     }
+    .item-header {
+      padding: 10px;
+    }
   }
   .education {
-    background-color: $rs-dark; 
+    background-color: $rs-dark;
   }
   .commercial {
     background-color: $rs-gray;
