@@ -13,12 +13,7 @@ gulp.task('delete', () => {
 
 gulp.task('index', () => {
   gulp.src('index.html')
-<<<<<<< HEAD
     .pipe(gulp.dest('docs'));
-=======
-    .pipe(minify())
-    .pipe(gulp.dest('dist'));
->>>>>>> 70a410069d60dac432eb26ad5dbbf7a885bcb14c
 });
 
 gulp.task('css-deps', () => {
