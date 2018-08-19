@@ -229,6 +229,11 @@ main {
     width: 100%;
     height: 100vh;
   }
+
+  .item:hover ~ .item .item-header {
+    font-size: 16px;
+  }
+
   .item {
     flex: 1;
     display: flex;
@@ -236,13 +241,10 @@ main {
     align-items: center;
     font-size: 24px;
     height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
     transition: flex 0.8s ease;
     
     &:hover{
-      flex: 7;
+      flex: 8;
       .item-header {
         display: none;
       }
@@ -250,11 +252,18 @@ main {
       .commercial,
       .healthcare,
       .public-service {
-        display: block;
+        display: flex;
+        font-size: 12px;
+        height: inherit;
+        width: 100%;
       }
     }
     .item-header {
       padding: 10px;
+    }
+
+    .education {
+      color: $rs-white;
     }
   }
   .rs-dark {
