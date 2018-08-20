@@ -12,7 +12,7 @@ gulp.task('delete', () => {
 });  
 
 gulp.task('index', () => {
-  gulp.src('index.html')
+  gulp.src(['index.html', 'favicon.ico'])
     .pipe(gulp.dest('docs'));
 });
 
