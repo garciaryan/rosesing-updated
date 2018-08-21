@@ -100,7 +100,7 @@ $('#nav-toggle').click(() => {
   }
 });
 
-$('main').click(() => {
+$('.navbar-item').click(() => {
   $('#nav-menu').removeClass('is-active');
 });
 
