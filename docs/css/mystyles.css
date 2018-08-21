@@ -20588,7 +20588,7 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh; }
+    height: 100%; }
   #projects .item:hover ~ .item .item-header {
     font-size: 16px; }
   #projects .item {
@@ -20667,7 +20667,10 @@ main {
     display: block !important; }
 
   .services-title {
-    display: block !important; } }
+    display: block !important; }
+
+  #projects .gallery-wrap {
+    flex-direction: column; } }
 @media screen and (min-width: 1024px) {
   main .about {
     height: 100%; }
