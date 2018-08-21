@@ -104,3 +104,13 @@ $('.navbar-item').click(() => {
   $('#nav-menu').removeClass('is-active');
 });
 
+/**
+ * jquery solution for font-size on hover
+ */
+
+$('.item').hover(() => {
+  $('.item-header').addClass('smaller-font');
+}, () => {
+  $('.item-header').removeClass('smaller-font');
+});
+

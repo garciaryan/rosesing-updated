@@ -230,10 +230,6 @@ main {
     height: 100%;
   }
 
-  .item:hover ~ .item .item-header {
-    font-size: 16px;
-  }
-
   .item {
     flex: 1;
     display: flex;
@@ -261,6 +257,9 @@ main {
     }
     .item-header {
       padding: 10px;
+    }
+    .smaller-font {
+      font-size: 16px;
     }
 
     .education {
