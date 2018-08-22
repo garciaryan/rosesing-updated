@@ -3,7 +3,6 @@ const gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   gulpif = require('gulp-if'),
-  ghPages = require('gulp-gh-pages'),
   runSequence = require('run-sequence'),
   minify = require('gulp-minify'); 
 
@@ -59,10 +58,4 @@ gulp.task('js-deps', () => {
 gulp.task('build', done => {
   runSequence('delete', 'css-deps', 'js-deps', 'css', 'js', 'img', 'index', done);
   console.log('Built!');
-});
-
-gulp.task('deploy', () => {
-  gulp.src('./dist/**/*')
-    .pipe(ghPages());
-  console.log('Deployed dist folder to gh-pages.');
 });
