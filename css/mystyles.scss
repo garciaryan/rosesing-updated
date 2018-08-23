@@ -270,13 +270,23 @@ main {
       }
       .education,
       .commercial,
-      .healthcare,
-      .public-service {
+      .healthcare {
         display: flex;
         font-size: 12px;
         height: inherit;
         width: 100%;
         overflow-y: scroll;
+      }
+
+      .public-service {
+        display: flex;
+        height: inherit;
+        width: 100%;
+        overflow-y: scroll;
+        font-size: 16px;
+        p {
+          margin-top: 10px;
+        }
       }
     }
     .item-header {
