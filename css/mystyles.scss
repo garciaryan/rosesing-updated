@@ -151,7 +151,23 @@ main {
     position: relative;
 
     img.is-background {
-      filter: brightness(50%);
+      filter: brightness(40%);
+    }
+
+    .hero-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-content {
+      z-index: 9;
+      .title {
+        color: $rs-white;
+      }
+      .subtitle {
+        color: $rs-white;
+      }
     }
   }
 
