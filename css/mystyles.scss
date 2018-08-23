@@ -368,8 +368,20 @@ main {
     }
   }
 
+  .about-right {
+    p {
+      margin-top: 10px;
+    }
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+
   .services-content {
     display: block !important;
+    p {
+      margin-bottom: 10px;
+    }
   }
 
   .services-title {

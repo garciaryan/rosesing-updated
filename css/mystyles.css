@@ -20680,8 +20680,15 @@ main {
   .navbar .navbar-brand .name-brand {
     font-size: 18px; }
 
+  .about-right p {
+    margin-top: 10px; }
+  .about-right p:first-child {
+    margin-top: 0; }
+
   .services-content {
     display: block !important; }
+    .services-content p {
+      margin-bottom: 10px; }
 
   .services-title {
     display: block !important; }
