@@ -20538,6 +20538,11 @@ main {
       display: flex;
       justify-content: center;
       align-items: center; }
+      main .hero .hero-body .hero-btn {
+        background-color: #4F6D7A;
+        border: none; }
+        main .hero .hero-body .hero-btn a {
+          color: #fff; }
     main .hero .hero-content {
       z-index: 9; }
       main .hero .hero-content .title {

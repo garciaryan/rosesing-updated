@@ -158,6 +158,14 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .hero-btn {
+        background-color: $rs-dark;
+        border: none;
+        a {
+          color: $rs-white;
+        }
+      }
     }
 
     .hero-content {

@@ -20533,7 +20533,22 @@ main {
     height: 100%;
     position: relative; }
     main .hero img.is-background {
-      filter: brightness(50%); }
+      filter: brightness(40%); }
+    main .hero .hero-body {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .hero .hero-body .hero-btn {
+        background-color: #4F6D7A;
+        border: none; }
+        main .hero .hero-body .hero-btn a {
+          color: #fff; }
+    main .hero .hero-content {
+      z-index: 9; }
+      main .hero .hero-content .title {
+        color: #fff; }
+      main .hero .hero-content .subtitle {
+        color: #fff; }
   main .about {
     width: 100%;
     position: relative; }
@@ -20645,6 +20660,8 @@ main {
       background-color: #4F6D7A;
       color: #fff;
       font-family: "Montserrat", sans-serif; }
+  .modal form {
+    width: 100%; }
 
 .footer {
   font-family: "Montserrat", sans-serif;

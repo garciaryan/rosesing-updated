@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/deps.css">
   <link rel="stylesheet" href="css/mystyles.css">
-  <title>Rose Sing and Associates Inc. | Electrical Consultants</title>
+  <title>Rose Sing and Associates, Inc. | Electrical Consultants</title>
 </head>
 <body class="has-navbar-fixed-top">
   <!-- Navbar begins -->
@@ -63,8 +63,10 @@
       </div>
       <div class="hero-body">
         <div class="columns is-mobile is-centered">
-          <div class="column">
-            
+          <div class="column hero-content">
+            <h1 class="title">Rose Sing and Associates, Inc.</h1>
+            <h2 class="subtitle">Electrical Consultants</h2>
+            <button class="button is-medium hero-btn" id="navi"><a href="#projects">View Projects</a></button>
           </div>
         </div>
       </div>
@@ -815,58 +817,62 @@
                 </div>
               </div>
               <div class="tile is-parent">
-                <article class="tile is-child box">
-                  <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                      <label class="label">From</label>
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <p class="control is-expanded has-icons-left">
-                          <input class="input" type="text" placeholder="Name">
-                          <span class="icon is-small is-left">
-                            <i class="fas fa-user"></i>
-                          </span>
-                        </p>
+                <form action="https://formspree.io/trose@rosesing.com" method="POST">
+                  <article class="tile is-child box">
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                        <label class="label">From</label>
                       </div>
-                      <div class="field">
-                        <p class="control is-expanded has-icons-left has-icons-right">
-                          <input class="input" type="email" placeholder="Email">
-                          <span class="icon is-small is-left">
-                            <i class="fas fa-envelope"></i>
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                      <label class="label">Message</label>
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <div class="control">
-                          <textarea class="textarea" placeholder="How can we help?"></textarea>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control is-expanded has-icons-left">
+                            <input name="From" class="input" type="text" placeholder="Name">
+                            <input type="hidden" name="_cc" value="dsing@rosesing.com" />
+                            <input type="hidden" name="_subject" value="New message!" />
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-user"></i>
+                            </span>
+                          </p>
+                        </div>
+                        <div class="field">
+                          <p class="control is-expanded has-icons-left has-icons-right">
+                            <input name="Email" class="input" type="email" placeholder="Email">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-envelope"></i>
+                            </span>
+                          </p>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  <div class="field is-horizontal">
-                    <div class="field-label">
-                      <!-- Left empty for spacing -->
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <div class="control">
-                          <button class="button">
-                            Send message
-                          </button>
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                        <label class="label">Message</label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field">
+                          <div class="control">
+                            <textarea name="Message" class="textarea" placeholder="How can we help?"></textarea>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </article>
+                    
+                    <div class="field is-horizontal">
+                      <div class="field-label">
+                        <!-- Left empty for spacing -->
+                      </div>
+                      <div class="field-body">
+                        <div class="field">
+                          <div class="control">
+                            <button class="button">
+                              Send message
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </form>
               </div>
             </div>
           </div>
