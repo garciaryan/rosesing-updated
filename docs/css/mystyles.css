@@ -20618,13 +20618,20 @@ main {
         display: none; }
       #projects .item:hover .education,
       #projects .item:hover .commercial,
-      #projects .item:hover .healthcare,
-      #projects .item:hover .public-service {
+      #projects .item:hover .healthcare {
         display: flex;
         font-size: 12px;
         height: inherit;
         width: 100%;
         overflow-y: scroll; }
+      #projects .item:hover .public-service {
+        display: flex;
+        height: inherit;
+        width: 100%;
+        overflow-y: scroll;
+        font-size: 16px; }
+        #projects .item:hover .public-service p {
+          margin-top: 10px; }
     #projects .item .item-header {
       padding: 10px; }
     #projects .item .smaller-font {
