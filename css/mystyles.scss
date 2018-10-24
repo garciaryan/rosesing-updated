@@ -237,6 +237,13 @@ main {
       align-items: center;
       flex-direction: column;
       font-size: 0.95em;
+
+      .services-li {
+        padding: 5px 0 3px 5px;
+        .icon-separate {
+          padding-right: 10px;
+        }
+      }
     }
   }
 }

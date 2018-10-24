@@ -20594,6 +20594,10 @@ main {
       align-items: center;
       flex-direction: column;
       font-size: 0.95em; }
+      main .parallax .services-content .services-li {
+        padding: 5px 0 3px 5px; }
+        main .parallax .services-content .services-li .icon-separate {
+          padding-right: 10px; }
 
 #projects {
   height: 100%;
