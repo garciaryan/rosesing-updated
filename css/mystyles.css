@@ -20599,7 +20599,7 @@ main {
         width: 75%;
         display: flex; }
         main .parallax .services-content .services-li .icon-separate {
-          padding-right: 10px; }
+          margin-right: 4%; }
 
 #projects {
   height: 100%;
