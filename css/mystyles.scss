@@ -239,7 +239,9 @@ main {
       font-size: 0.95em;
 
       .services-li {
-        padding: 5px 0 3px 5px;
+        padding: 5px 0 3px 5px;        
+        width: 75%;
+        display: flex;
         .icon-separate {
           padding-right: 10px;
         }
