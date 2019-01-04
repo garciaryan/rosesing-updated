@@ -20499,7 +20499,8 @@ html, body {
   text-transform: uppercase; }
 
 .bullets {
-  padding-left: 10px;
+  padding-left: 2em;
+  text-indent: -1.5em;
   list-style: disc inside; }
   .bullets li:last-child {
     margin-bottom: 10px; }

@@ -92,7 +92,8 @@ html, body {
 }
 
 .bullets {
-  padding-left: 10px;
+  padding-left: 2em;
+  text-indent: -1.5em;
   list-style: disc inside;
   li:last-child {
     margin-bottom: 10px;
