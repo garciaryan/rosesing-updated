@@ -83,6 +83,31 @@ html, body {
   align-items: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bullets {
+  padding-left: 10px;
+  list-style: disc inside;
+  li:last-child {
+    margin-bottom: 10px;
+  }
+}
+
+.pad-10 {
+  padding-bottom: 10px;
+}
+
+// For spacing, but not too dramatic
+.pad-5 {
+  padding-bottom: 5px;
+}
+
 //Navbar
 .navbar {
   background-color: $rs-logo-color;
@@ -244,6 +269,7 @@ main {
         display: flex;
         .icon-separate {
           margin-right: 4%;
+          padding-top: 3px;
         }
       }
     }
