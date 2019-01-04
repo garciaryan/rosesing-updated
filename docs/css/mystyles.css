@@ -20492,6 +20492,25 @@ html, body {
   justify-content: center;
   align-items: center; }
 
+.bold {
+  font-weight: bold; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.bullets {
+  padding-left: 2em;
+  text-indent: -1.5em;
+  list-style: disc inside; }
+  .bullets li:last-child {
+    margin-bottom: 10px; }
+
+.pad-10 {
+  padding-bottom: 10px; }
+
+.pad-5 {
+  padding-bottom: 5px; }
+
 .navbar {
   background-color: #F7F7F7;
   font-family: "Montserrat", sans-serif; }
@@ -20599,7 +20618,8 @@ main {
         width: 75%;
         display: flex; }
         main .parallax .services-content .services-li .icon-separate {
-          margin-right: 4%; }
+          margin-right: 4%;
+          padding-top: 3px; }
 
 #projects {
   height: 100%;
@@ -20629,13 +20649,15 @@ main {
         font-size: 12px;
         height: inherit;
         width: 100%;
-        overflow-y: scroll; }
+        overflow-y: scroll;
+        animation: fadeIn 1s; }
       #projects .item:hover .public-service {
         display: flex;
         height: inherit;
         width: 100%;
         overflow-y: scroll;
-        font-size: 16px; }
+        font-size: 16px;
+        animation: fadeIn 1s; }
         #projects .item:hover .public-service p {
           margin-top: 10px; }
     #projects .item .item-header {
@@ -20713,5 +20735,12 @@ main {
     height: 100%; }
   main .parallax {
     height: 100%; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=mystyles.css.map */
