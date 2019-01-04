@@ -285,6 +285,7 @@ main {
         height: inherit;
         width: 100%;
         overflow-y: scroll;
+        animation: fadeIn 1s;
       }
 
       .public-service {
@@ -293,6 +294,7 @@ main {
         width: 100%;
         overflow-y: scroll;
         font-size: 16px;
+        animation: fadeIn 1s;
         p {
           margin-top: 10px;
         }
@@ -422,4 +424,10 @@ main {
       height: 100%;
     }
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  66% { opacity: 0 }
+  100% { opacity: 1 }
 }
