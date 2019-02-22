@@ -180,6 +180,10 @@ main {
       filter: brightness(40%);
     }
 
+    .collage {
+      object-fit: fill !important;
+    }
+
     .hero-body {
       display: flex;
       justify-content: center;

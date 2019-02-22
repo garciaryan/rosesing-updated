@@ -20553,6 +20553,8 @@ main {
     position: relative; }
     main .hero img.is-background {
       filter: brightness(40%); }
+    main .hero .collage {
+      object-fit: fill !important; }
     main .hero .hero-body {
       display: flex;
       justify-content: center;
